@@ -1,3 +1,37 @@
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "lib": [
+//       "dom",
+//       "dom.iterable",
+//       "esnext"
+//     ],
+//     "allowJs": false,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "strictPropertyInitialization": false,
+//     "forceConsistentCasingInFileNames": true,
+//     "noEmit": true,
+//     "incremental": true,
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     // "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "jsx": "preserve",
+//     "resolveJsonModule": true
+//     // "resolveJsonModule": true
+//     // "resolveJsonModule": true
+//   },
+//   "include": [
+//     "next-env.d.ts",
+//     "**/*.ts",
+//     "**/*.tsx"
+//   ],
+//   "exclude": [
+//     "node_modules"
+//   ]
+// }
+
 {
   "compilerOptions": {
     "target": "es5",
@@ -7,22 +41,23 @@
       "esnext"
     ],
     "allowJs": false,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "strict": true,
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    // "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "resolveJsonModule": true
-    // "resolveJsonModule": true
+    "incremental": true
   },
   "include": [
-    "next-env.d.ts",
+    "next-env-custom.d.ts",
+    "images.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

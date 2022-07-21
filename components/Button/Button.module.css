@@ -21,7 +21,6 @@
   background-color: var(--primary-hover);
 }
 
-
 .ghost {
   color: var(--black);
   background: none;
@@ -31,4 +30,20 @@
 .ghost:hover {
   color: var(--white);
   background-color: var(--primary);
+}
+
+.arrow {
+  display: inline-block;
+
+  margin-left: 10px;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.primary svg,
+.ghost:hover svg {
+  fill: var(--white);
 }
